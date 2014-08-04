@@ -1,8 +1,13 @@
 ---
-layout: post
+layout: sketch
 title:  "Welcome to Jekyll!"
 date:   2014-08-04 21:13:11
-categories: jekyll update
+asset: sly.jpg
+
+---
+
+Here would be note about the sketch
+
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
