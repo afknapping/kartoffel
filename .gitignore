@@ -1,7 +1,5 @@
 _site
 .DS_Store
 assets/.sass-cache/
-_posts
 .sass-cache/
 npm-debug.log
-_dinge/

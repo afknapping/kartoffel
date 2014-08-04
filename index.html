@@ -4,8 +4,64 @@ layout: default
 
 <div class="home">
 
+
   <h1>Posts</h1>
 
+
+  <!-- major posts -->
+  <ul class="posts">
+
+    {% for post in site.posts %}
+
+
+      {% if post.layout == "article" or post.layout == "picture" %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+
+      {% endif%}
+
+    {% endfor %}
+  </ul>
+  <hr>
+
+<!-- major posts -->
+  <ul class="posts">
+
+    {% for post in site.posts %}
+
+
+      {% if post.layout == "sketch" or post.layout == "link" or post.layout == "snapshot" or post.layout == "quote" %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+
+      {% endif%}
+
+    {% endfor %}
+  </ul>
+  <hr>
+
+
+  <ul class="posts">
+
+    {% for post in site.posts %}
+      {% if post.layout == "sketch" or post.layout == "link" or post.layout == "snapshot" or post.layout == "quote" %}
+        minor
+      {% endif%}
+      {% if post.layout == "article" or post.layout == "picture" %}
+        major
+      {% endif%}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+<hr>
   <ul class="posts">
     {% for post in site.posts %}
       <li>
