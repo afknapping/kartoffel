@@ -3,7 +3,4 @@
 
 ## image link template
 
-    ![]({{site.baseurl}}/images/2014/XXXXXXXXX)
-
-## Thanks
-Robin for the Bohrmaschine!
+    ![]({{site.baseurl}}/content/images/2014/XXXXXXXXX)
