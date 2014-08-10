@@ -11,5 +11,6 @@ github_username:  jekyll
 markdown: kramdown
 permalink: pretty
 
-# sass:
-#   sass_dir: _sass
+sass:
+  sass_dir: _sass
+  sourcemap: true
