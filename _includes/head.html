@@ -9,4 +9,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
+    <!-- 1. Load platform.js for polyfill support. -->
+    <script src="{{ site.baseurl }}/bower_components/platform/platform.js"></script>
+    <!-- 2. Use an HTML Import to bring in the element. -->
+    <link rel="import" href="{{ site.baseurl }}/elements/my-element.html">
+
 </head>
